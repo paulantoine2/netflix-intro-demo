@@ -1,0 +1,129 @@
+<svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="670.673"
+          height="665.193"
+          viewBox="0 0 670.673 665.193"
+        >
+          <defs>
+            <linearGradient
+              id="linear-gradient"
+              x1="0.922"
+              y1="0.417"
+              x2="0.027"
+              y2="0.424"
+              gradientUnits="objectBoundingBox"
+            >
+              <stop offset="0" style="stop-color: rgba(152, 80, 108, 1)" />
+              <stop offset="3%" style="stop-color: rgba(237, 0, 61, 1)" />
+              <stop offset="6%" style="stop-color: rgba(246, 160, 51, 1)" />
+              <stop offset="9%" style="stop-color: rgba(237, 0, 61, 1)" />
+              <stop offset="15%" style="stop-color: rgba(141, 55, 5, 1)" />
+              <stop offset="21%" style="stop-color: rgba(246, 160, 51, 1)" />
+              <stop offset="25%" style="stop-color: rgba(237, 0, 61, 1)" />
+              <stop offset="28%" style="stop-color: rgba(246, 160, 51, 1)" />
+              <stop offset="32%" style="stop-color: rgba(141, 55, 5, 1)" />
+              <stop offset="37%" style="stop-color: rgba(237, 0, 61, 1)" />
+              <stop offset="43%" style="stop-color: rgba(152, 80, 108, 1)" />
+              <stop offset="47%" style="stop-color: rgba(152, 80, 108, 1)" />
+              <stop offset="52%" style="stop-color: rgba(152, 80, 108, 1)" />
+              <stop offset="62%" style="stop-color: rgba(237, 0, 61, 1)" />
+              <stop offset="63%" style="stop-color: rgba(246, 160, 51, 1)" />
+              <stop offset="65%" style="stop-color: rgba(237, 0, 61, 1)" />
+              <stop offset="71%" style="stop-color: rgba(246, 160, 51, 1)" />
+              <stop offset="72%" style="stop-color: rgba(237, 0, 61, 1)" />
+              <stop offset="80%" style="stop-color: rgba(246, 160, 51, 1)" />
+              <stop offset="86%" style="stop-color: rgba(237, 0, 61, 1)" />
+              <stop offset="88%" style="stop-color: rgba(246, 160, 51, 1)" />
+              <stop offset="92%" style="stop-color: rgba(237, 0, 61, 1)" />
+              <stop offset=" 97%" style="stop-color: rgba(246, 160, 51, 1)" />
+            </linearGradient>
+            <filter
+              id="_1"
+              x="56.708"
+              y="0"
+              width="455.596"
+              height="665.193"
+              filterUnits="userSpaceOnUse"
+            >
+              <feOffset input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="10" result="blur" />
+              <feFlood flood-color="#f50000" flood-opacity="0.749" />
+              <feComposite operator="in" in2="blur" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+            <filter
+              id="_4"
+              x="0"
+              y="328.014"
+              width="670.673"
+              height="140"
+              filterUnits="userSpaceOnUse"
+            >
+              <feOffset dy="20" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="10" result="blur-2" />
+              <feFlood flood-opacity="0.22" />
+              <feComposite operator="in" in2="blur-2" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+            <filter
+              id="_2"
+              x="342.626"
+              y="34.514"
+              width="140"
+              height="607"
+              filterUnits="userSpaceOnUse"
+            >
+              <feOffset dx="-20" input="SourceAlpha" />
+              <feGaussianBlur stdDeviation="10" result="blur-3" />
+              <feFlood flood-opacity="0.322" />
+              <feComposite operator="in" in2="blur-3" />
+              <feComposite in="SourceGraphic" />
+            </filter>
+          </defs>
+          <g id="logo" transform="translate(-593.374 -196.486)">
+            <rect
+              id="band3"
+              data-name="3"
+              width="80"
+              height="257"
+              transform="translate(1174.182 561.555) rotate(41)"
+              fill="#980001"
+            />
+            <path
+              id="band1"
+              data-name="1"
+              d="M0,0,69.1-39.894,80,523,3.107,612.735Z"
+              transform="translate(986.449 261.034) rotate(30)"
+              fill="#980001"
+            />
+            <g transform="matrix(1, 0, 0, 1, 593.37, 196.49)" filter="url(#_1)">
+              <path
+                id="band1-gradient"
+                data-name="1"
+                d="M0,0,69.1-39.894,80,523,3.107,612.735Z"
+                transform="translate(393.07 64.55) rotate(30)"
+                opacity="0"
+                fill="url(#linear-gradient)"
+              />
+            </g>
+            <g transform="matrix(1, 0, 0, 1, 593.37, 196.49)" filter="url(#_4)">
+              <path
+                id="band4"
+                data-name="4"
+                d="M53.929,0H610.673V80H0Z"
+                transform="translate(30 338.01)"
+                fill="#d10303"
+              />
+            </g>
+            <g transform="matrix(1, 0, 0, 1, 593.37, 196.49)" filter="url(#_2)">
+              <path
+                id="band2"
+                data-name="2"
+                d="M0,0H80V547L0,520.1Z"
+                transform="translate(392.63 64.51)"
+                fill="#f30000"
+              />
+            </g>
+          </g>
+        </svg>

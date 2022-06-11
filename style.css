@@ -1,0 +1,193 @@
+#intro {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+#welcome-container,
+#logo-container,
+#hero-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+#welcome-container {
+  z-index: 100;
+}
+
+#logo-container,
+#hero-container {
+  perspective: 1000px;
+}
+
+#logo-container > svg {
+  width: 70vw;
+  opacity: 0;
+}
+
+.run #logo-container > svg {
+  opacity: 1;
+}
+
+.run #welcome-container {
+  opacity: 0;
+}
+
+.run #band1 {
+  animation: anim1 0.1s linear both;
+  animation-delay: 0.3s;
+}
+
+.run #band2 {
+  animation: anim2 0.1s linear both;
+  animation-delay: 0.4s;
+}
+
+.run #band3 {
+  animation: anim3 0.05s linear both;
+  animation-delay: 0.5s;
+}
+
+.run #band4 {
+  animation: anim4 0.1s linear both;
+  animation-delay: 0.55s;
+}
+
+@keyframes anim1 {
+  from {
+    clip-path: polygon(0 100%, 100% 90%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes anim2 {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes anim3 {
+  from {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+  to {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+}
+
+@keyframes anim4 {
+  from {
+    clip-path: polygon(100% 100%, 100% 100%, 100% 0, 100% 0);
+  }
+  to {
+    clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+  }
+}
+
+.done #band2 {
+  animation-direction: reverse;
+  animation-delay: 2.4s;
+}
+
+.done #band3 {
+  animation-direction: reverse;
+  animation-delay: 2.3s;
+}
+
+.done #band4 {
+  animation-direction: reverse;
+  animation-delay: 2.2s;
+}
+
+#band1-gradient {
+  transition: opacity ease 1s;
+  transition-delay: 1.3s;
+}
+
+.done #band1-gradient {
+  opacity: 1;
+}
+
+@keyframes outAnim {
+  0% {
+    transform: translateZ(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(1000px) translateX(9%);
+    opacity: 0;
+  }
+}
+
+.run #logo-container > svg {
+  animation: outAnim 3s cubic-bezier(0.67, -0.04, 0.5, 0.68) forwards;
+  animation-delay: 0.3s;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar img {
+  height: 60px;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.fadeDown {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  transition-delay: 2.5s;
+}
+
+.done .fadeDown {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@keyframes titleAnim {
+  from {
+    opacity: 0;
+    transform: translateZ(-2000px);
+  }
+  to {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+h1 {
+  opacity: 0;
+}
+
+.run h1 {
+  animation: titleAnim 1s ease-out both;
+  animation-delay: 2.8s;
+}
